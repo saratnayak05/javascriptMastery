@@ -90,3 +90,70 @@ console.log(typeof date); //object (date is a type of object in JavaScript, so t
 //regex is a built-in object in JavaScript that represents a regular expression, which is a pattern used to match character combinations in strings. It can be created using the RegExp() constructor or by using forward slashes.
 let regex = /ab+c/; //regex //regular expression that matches "ab" followed by one or more "c"
 console.log(typeof regex); //object (regex is a type of object in JavaScript, so typeof returns object)
+
+//etc
+
+
+
+
+
+
+//type conversion in js
+
+//type conversion is the process of converting one data type to another. In JavaScript, type conversion can be done implicitly (automatic) or explicitly (manual).
+
+//implicit type conversion (automatic) - when js automatically converts one data type to another
+//explicit type conversion (manual) - when we manually convert one data type to another using built-in functions or methods
+
+//example of implicit type conversion
+let a = 10; //number
+let b = '20'; //string
+let c = a + b; //implicit type conversion (number to string)    
+console.log(c); //1020 (string)
+console.log(typeof c); //string
+
+
+//example of explicit type conversion
+let d = 10; //number
+let e = '20'; //string
+let f = d + Number(e); //explicit type conversion (string to number)
+console.log(f); //30 (number)
+console.log(typeof f); //number
+
+//type coercion is the process of converting one data type to another. In JavaScript, type coercion can be done implicitly (automatic) or explicitly (manual).
+
+//+ is used for both addition and string concatenation. If one of the operands is a string, JavaScript will convert the other operand to a string and perform string concatenation. This is known as type coercion.
+let g =10 +'20'; //string concatenation (number to string)
+console.log(g); //1020 (string)
+console.log(typeof g); //string
+
+//if operands is not srring then it will perform operation according to the operator
+let h = 10 - '20'; //number subtraction (string to number)
+console.log(h); //-10 (number)
+
+
+
+
+
+//parseInt() and parseFloat() are built-in functions in JavaScript that are used to convert strings to numbers. parseInt() converts a string to an integer, while parseFloat() converts a string to a floating-point number.
+
+
+
+//parseInt() example
+let i = '10.5'; //string
+let j = parseInt(i); //string to integer
+
+console.log(j); //10 (integer)
+
+
+//parseFloat() example
+
+let k = '10.5'; //string
+let l = parseFloat(k); //string to float
+
+console.log(l); //10.5 (float)
+console.log(typeof l); //number (float is a type of number in JavaScript)
+
+
+
+
